@@ -1,64 +1,65 @@
-# Phase 1 Project
+# Project description
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+Analyzing movie data to help Microsoft's new buisness plan to make a new movie studio
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
+## Data
 
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+Data from three different sources
 
-## Project Overview
+1. IMDB
+    1. imdb.title.basics
+    2. imdb.title.ratings
+2. The Numbers
+    1. tn.movie_budgets
+3. Box Office Mojo
+    1. bom.movie_gross
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
-
-### Business Problem
+### The Project
 
 Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
 
-### The Data
+### My Findings
 
-In the folder `zippedData` are movie datasets from:
+### Question 1:  What are the highest rated genres?
+    
 
-* Box Office Mojo
-* IMDB
-* Rotten Tomatoes
-* TheMovieDB.org
+The "Top Rated Genres" chart shows that the Biography genre is the highest rated
+with an average rating of a little over 7 stars
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+![top_rated_genres](Images/Q1_top_genre.png)
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+![top_number_votes](Images/votes_linechart.png)
 
-## Deliverables
+## Question 2  
 
-There are three deliverables for this project:
+ **What are the most profitable movies?**
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+Below is the Top Grossing Movies bargraph.  It shows the production budget, profits, and worldwide gross.
+with the top 3 movies bringing in a profit of over 1 billion dollars.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+![top_movies](Images/top_movies.png)
 
-### Key Points
+## Question 3:  When would be the best time to release a movie? 
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+the chart shows the Average profit for each month thoughout the year.
+based on the chart it looks like that the best time to release a movie would
+be in the summer months of May, June, and July.  Try to avoid releasing a movie 
+the beginning of the year.
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+![Best_time_to_release](Images/q3release.png)
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+# Conclusion 
 
-## Getting Started
+**Here are my recommendations:**
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+1. For better ratings i would look into focusing on the the top genres: Biography, Adventure
+and Action.
+2. Movies released in the summer months are more profitable so i would focus on aiming your release date
+around that time.  Avoid releasing a movie at the start of the year
+3. See what kind of movies the top profiting ones are like what genre are they, what studio is producing them 
+and based off of that you can get an idea of where to start with a movie.
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
+```python
 
-## Project Submission and Review
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+```
